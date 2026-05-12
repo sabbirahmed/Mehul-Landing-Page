@@ -5,8 +5,7 @@ import { FadeIn } from "@/components/fade-in";
 
 import { consultationWhatsAppLink, telHref } from "./utils";
 
-const heroImage =
-  "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2000&q=85";
+const heroImage = "/images/branches/hero-bg.jpg";
 
 export function BranchHeroSection({
   phone,

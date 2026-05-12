@@ -24,8 +24,7 @@ import { consultationWhatsAppLink, telHref } from "@/components/branches/utils";
 import { FadeIn } from "@/components/fade-in";
 import { Locale, primaryBranchPhone, primaryWhatsAppE164 } from "@/lib/site-content";
 
-const heroImage =
-  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1300&q=85";
+const heroImage = "/images/services/visa-services-hero.jpg";
 
 const processSteps = [
   { icon: Phone, title: "Consultation", desc: "Clear goals and the right pathway for you." },
@@ -55,10 +54,10 @@ export default async function VisaServicesPage({
               Visa & Services
             </p>
             <h1 className="mt-5 text-4xl font-extrabold leading-tight text-[#0B2D5C] md:text-5xl">
-              Your Complete Pathway to Study and Work in Japan
+              Comprehensive Guide to Studying and Working in Japan.
             </h1>
             <p className="mt-5 max-w-xl text-lg text-[#0B2D5C]/80">
-              We provide end-to-end support — from language learning to visa processing and job placement.
+              Mehul provides complete, step-by-step support. We manage your language training, visa processing, and final job placement.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -97,9 +96,9 @@ export default async function VisaServicesPage({
       <section className="section-padding">
         <div className="container-main">
           <FadeIn>
-            <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Three Pathways to Japan</h2>
+            <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Three Proven Pathways to Japan</h2>
             <p className="mt-3 max-w-2xl text-[#0B2D5C]/80">
-              Choose the route that matches your goal — we guide you at every step.
+              Select the route that best aligns with your goals. Mehul offers expert guidance at every stage of your journey.
             </p>
           </FadeIn>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -108,25 +107,25 @@ export default async function VisaServicesPage({
                 emoji: "🎓",
                 icon: GraduationCap,
                 title: "Student Visa",
-                desc: "Language schools, university admission, and study-focused visa support.",
+                desc: "Build the foundation for your career in Japan. We offer complete support for language school enrollment, admissions, and visa processing.",
                 image:
-                  "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80",
+                  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
               },
               {
                 emoji: "💼",
                 icon: Briefcase,
                 title: "Job Visa",
-                desc: "Corporate and professional roles with documentation and career alignment.",
+                desc: "Advance your professional career with our expert assistance in securing corporate roles, managing documentation, and long-term career guidance.",
                 image:
-                  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+                  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80",
               },
               {
                 emoji: "🏗️",
                 icon: Building2,
                 title: "SSW Visa",
-                desc: "Specified Skilled Worker sectors with training and placement readiness.",
+                desc: "Establish a stable career in Japan’s skilled sectors. We provide specialized training and direct job placement for SSW programs.",
                 image:
-                  "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
+                  "/images/services/SSWPathwayPrograms.jpeg",
               },
             ].map((item, index) => (
               <FadeIn key={item.title} delay={index * 0.07}>
@@ -158,15 +157,18 @@ export default async function VisaServicesPage({
       <section className="section-padding bg-white">
         <div className="container-main grid items-center gap-10 lg:grid-cols-2">
           <FadeIn>
-            <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Student Visa & University Placement</h2>
+            <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Student Visa & Language School Placement</h2>
             <p className="mt-4 text-[#0B2D5C]/80">
-              Structured guidance for admission, documentation, and a smooth transition to study in Japan.
+              Step-by-step support for language school admissions and visa documentation. We ensure a smooth transition to studying and building your career in Japan.
             </p>
             <ul className="mt-6 space-y-3">
               {[
-                "Admission strategy and profile planning",
-                "A-rank language school and university pathways",
-                "Interview and application document support",
+                "Personalized admission strategy & profile building",
+                "Placement in top-tier (A-rank) Japanese language schools",
+                "Comprehensive support for applications & interview preparation",
+                "End-to-end student visa processing & documentation",
+                "Expert Japanese language training & exam guidance",
+                "Career counseling & future planning in Japan",
               ].map((line) => (
                 <li key={line} className="flex items-start gap-3 rounded-xl border border-[#0B2D5C]/10 bg-[#F5F9FF] px-4 py-3 text-sm text-[#0B2D5C]/85">
                   <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0 text-[#C8102E]" />
@@ -186,7 +188,7 @@ export default async function VisaServicesPage({
                 alt="University and study in Japan"
                 width={1200}
                 height={900}
-                className="h-[400px] w-full object-cover"
+                className="h-[500px] w-full object-cover"
                 unoptimized
               />
             </div>
@@ -224,15 +226,32 @@ export default async function VisaServicesPage({
                   </span>
                 ))}
               </div>
-              <ul className="mt-6 space-y-2 text-sm text-[#0B2D5C]/85">
-                <li className="flex gap-2">
-                  <TrendingUp className="h-4 w-4 shrink-0 text-[#C8102E]" />
-                  High-demand sectors with structured language and interview prep
-                </li>
-                <li className="flex gap-2">
-                  <Handshake className="h-4 w-4 shrink-0 text-[#C8102E]" />
-                  Documentation and visa process guidance end-to-end
-                </li>
+              <ul className="mt-6 space-y-3 text-sm text-[#0B2D5C]/85">
+                {[
+                  {
+                    title: "Job Matching & Placement",
+                    desc: "Connect with top Japanese companies in high-demand sectors.",
+                  },
+                  {
+                    title: "Resume & Profile Building",
+                    desc: "Expert help in creating Japanese-standard resumes (Rirekisho & Shokumukeirekisho).",
+                  },
+                  {
+                    title: "Language & Interview Prep",
+                    desc: "Specialized Japanese language training and mock interview guidance.",
+                  },
+                  {
+                    title: "End-to-End Visa Support",
+                    desc: "Complete management of your work visa processing and legal documentation.",
+                  },
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="mt-0.5 font-bold text-[#C8102E]">→</span>
+                    <span>
+                      <strong className="font-semibold text-[#0B2D5C]">{item.title}:</strong> {item.desc}
+                    </span>
+                  </li>
+                ))}
               </ul>
             </FadeIn>
           </div>
