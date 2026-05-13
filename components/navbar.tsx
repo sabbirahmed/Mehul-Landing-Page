@@ -43,7 +43,7 @@ export function Navbar({ locale }: { locale: Locale }) {
         <div className="flex items-center gap-2">
           <LanguageSwitcher locale={locale} />
           <a
-            href="https://edu.mehul.com.bd"
+            href="https://learn.mehul.com.bd/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-[#C8102E] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#AB0E27] md:text-sm"

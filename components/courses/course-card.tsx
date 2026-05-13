@@ -93,7 +93,9 @@ export function CourseCard({
             
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href={`/${locale}/branches#quick-contact`}
+                href="https://learn.mehul.com.bd/#courses"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#C8102E] px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-[#AB0E27]"
               >
                 Enroll Now

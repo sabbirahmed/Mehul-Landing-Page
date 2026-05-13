@@ -28,8 +28,6 @@ export default async function LocalizedHome({
 }) {
   const { locale } = await params;
   const t = labels[locale];
-  const heroImage =
-    "https://images.unsplash.com/photo-1526481280695-3c4699d5d2f1?auto=format&fit=crop&w=1200&q=80";
   const classroomImage = "/images/features/stand-out.jpg";
   const opportunityImages = [
     {
@@ -210,7 +208,9 @@ export default async function LocalizedHome({
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href={`/${locale}/branches#quick-contact`}
+                href="https://learn.mehul.com.bd/#courses"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#C8102E] px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-[#AB0E27]"
               >
                 {t.enrollNow}
@@ -525,7 +525,7 @@ export default async function LocalizedHome({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
+            "@context": "https://mehul.com.bd/",
             "@type": "EducationalOrganization",
             name: "Mehul Japanese Language Education Center",
             description: "Premium Japanese language, visa, and career support platform in Bangladesh.",
