@@ -29,7 +29,7 @@ export async function generateMetadata({
     description:
       "Visit Mehul branches in Dhaka, Rajshahi, Mymensingh, and Jamalpur. Expert Japanese language training, visa guidance, and Japan career support across Bangladesh.",
     openGraph: {
-      title: "Our Branch Network — Mehul Japanese Language Education Center",
+      title: "Our Branch Network Mehul Japanese Language Education Center",
       description:
         "Find your nearest Mehul branch for premium Japanese education and trusted Japan pathway support.",
     },
@@ -56,7 +56,7 @@ export default async function BranchesPage({
     })),
     department: branches.map((b) => ({
       "@type": "LocalBusiness",
-      name: `Mehul — ${b.name}`,
+      name: `Mehul ${b.name}`,
       telephone: b.phone.replace(/\D/g, ""),
       address: b.address,
       hasMap: b.map,

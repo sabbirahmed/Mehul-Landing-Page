@@ -16,10 +16,16 @@ const directorPlaceholders: Record<string, string> = {
 };
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=1200&q=80",
+  "/images/branches/gallery-1.jpg",
+  "/images/branches/gallery-2.jpg",
+  "/images/branches/gallery-3.jpg",
+  "/images/branches/gallery-4.jpg",
+  "/images/branches/gallery-5.jpg",
+  "/images/branches/gallery-6.jpg",
+  "/images/branches/gallery-7.jpg",
+  "/images/branches/gallery-8.jpg",
+  "/images/branches/gallery-9.jpg",
+  "/images/branches/gallery-10.jpg",
 ];
 
 export function BranchGridSection({ branches }: { branches: Branch[] }) {

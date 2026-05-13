@@ -14,7 +14,6 @@ import {
   Phone,
   Sparkles,
   Star,
-  Users,
   FileBadge2,
 } from "lucide-react";
 
@@ -112,32 +111,32 @@ export default async function LocalizedHome({
   ];
   const services = [
     {
-      title: "Student Visa Support",
-      desc: "University and language school application workflow, document readiness, and interview prep.",
-      icon: FileBadge2,
+      title: "Student Visa & Language Programs",
+      desc: "Start your educational journey in Japan! We help students get admission into excellent Japanese language schools. We will happily guide you through the entire process, from organizing your documents to preparing for your visa interview.",
+      icon: GraduationCap,
       image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
+        "/images/services/StudentVisaSupport.jpeg",
     },
     {
-      title: "Corporate Job Visa",
-      desc: "Profile optimization, Japanese CV support, and employer matching for corporate opportunities.",
-      icon: Building2,
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80",
-    },
-    {
-      title: "SSW Pathway Programs",
-      desc: "Sector-specific readiness for caregiver, agriculture, construction, and technical pathways.",
+      title: "SSW (Specified Skilled Worker) Pathway",
+      desc: "Ready to work in Japan? We prepare you for the SSW visa in demand fields like caregiving, agriculture, manufacturing, and construction. We provide the right language and skill training you need to confidently work and live in Japan.",
       icon: Handshake,
       image:
         "/images/services/SSWPathwayPrograms.jpeg",
     },
     {
-      title: "Career Transition Coaching",
-      desc: "From language to employment: interview confidence, culture, and settlement support.",
-      icon: Users,
+      title: "TITP (Technical Intern Training Program)",
+      desc: "Learn valuable skills while working! Our TITP support helps you join respected Japanese companies as a technical intern. It’s a wonderful opportunity to gain hands-on practical experience, earn money, and learn Japanese work culture directly.",
+      icon: Building2,
       image:
-        "/images/services/CareerTransitionCoaching.jpg",
+        "/images/services/TechnicalInternTrainingProgram.jpeg",
+    },
+    {
+      title: "International Job Services",
+      desc: "Connecting great talent with great opportunities! We help highly skilled professionals and graduates from Bangladesh find corporate jobs in Japan. We will support you with Japanese-style CV writing, interview practice, and matching you with the right employer.",
+      icon: BriefcaseBusiness,
+      image:
+        "/images/services/InternationalJobServices.jpeg",
     },
   ];
   const testimonials = [
@@ -357,9 +356,10 @@ export default async function LocalizedHome({
         <div className="container-main">
           <FadeIn>
             <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Premium Services for a Complete Journey</h2>
-            <p className="mt-3 max-w-2xl text-[#0B2D5C]/80">
-              Going beyond the classroom, we provide complete, end-to-end guidance ensuring a smooth and confident
-              transition from Bangladesh to your academic or professional future in Japan.
+            <p className="mt-3 text-[#0B2D5C]/80">
+              Welcome to Mehul Japanese Language Education Center!
+              <br />
+              Your trusted partner for a successful journey from Bangladesh to Japan. We provide friendly, step-by-step support for students, interns, and professionals to achieve their dreams in Japan.
             </p>
           </FadeIn>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -490,7 +490,7 @@ export default async function LocalizedHome({
       <section className="section-padding bg-[#F5F9FF]">
         <div className="container-main">
           <FadeIn>
-            <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Student Success Stories</h2>
+            <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Success Stories</h2>
             <p className="mt-3 max-w-2xl text-[#0B2D5C]/80">
               Real voices from learners who transformed language skills into real opportunities.
             </p>
