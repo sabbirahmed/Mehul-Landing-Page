@@ -98,13 +98,13 @@ export default async function LocalizedHome({
     },
     {
       title: "JLPT N3 Professional",
-      duration: "4.5 Months",
+      duration: "6 Months",
       benefit: "Higher-level fluency and comprehension for academic and office environments.",
       icon: GraduationCap,
     },
     {
       title: "JFT A2 (SSW Track)",
-      duration: "4 Months",
+      duration: "3 Months",
       benefit: "Targeted language training for specified skilled worker pathways.",
       icon: BriefcaseBusiness,
     },

@@ -96,36 +96,40 @@ export default async function VisaServicesPage({
       <section className="section-padding">
         <div className="container-main">
           <FadeIn>
-            <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Three Proven Pathways to Japan</h2>
-            <p className="mt-3 max-w-2xl text-[#0B2D5C]/80">
+            <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Four Proven Pathways to Japan</h2>
+            <p className="mt-3 text-[#0B2D5C]/80">
               Select the route that best aligns with your goals. Mehul offers expert guidance at every stage of your journey.
             </p>
           </FadeIn>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 emoji: "🎓",
                 icon: GraduationCap,
-                title: "Student Visa",
-                desc: "Build the foundation for your career in Japan. We offer complete support for language school enrollment, admissions, and visa processing.",
-                image:
-                  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
+                title: "Student Visa & Language Programs",
+                desc: "Start your educational journey in Japan! We help students get admission into excellent Japanese language schools. We will happily guide you through the entire process, from organizing your documents to preparing for your visa interview.",
+                image: "/images/services/StudentVisaSupport.jpeg",
+              },
+              {
+                emoji: "🤝",
+                icon: Handshake,
+                title: "SSW (Specified Skilled Worker)",
+                desc: "Ready to work in Japan? We prepare you for the SSW visa in demand fields like caregiving, agriculture, manufacturing, and construction. We provide the right language and skill training you need to confidently work and live in Japan.",
+                image: "/images/services/SSWPathwayPrograms.jpeg",
+              },
+              {
+                emoji: "🛠️",
+                icon: Wrench,
+                title: "TITP (Technical Intern Training)",
+                desc: "Learn valuable skills while working! Our TITP support helps you join respected Japanese companies as a technical intern. It’s a wonderful opportunity to gain hands-on practical experience, earn money, and learn Japanese work culture directly.",
+                image: "/images/services/TechnicalInternTrainingProgram.jpeg",
               },
               {
                 emoji: "💼",
                 icon: Briefcase,
-                title: "Job Visa",
-                desc: "Advance your professional career with our expert assistance in securing corporate roles, managing documentation, and long-term career guidance.",
-                image:
-                  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80",
-              },
-              {
-                emoji: "🏗️",
-                icon: Building2,
-                title: "SSW Visa",
-                desc: "Establish a stable career in Japan’s skilled sectors. We provide specialized training and direct job placement for SSW programs.",
-                image:
-                  "/images/services/SSWPathwayPrograms.jpeg",
+                title: "International Job Services",
+                desc: "Connecting great talent with great opportunities! We help highly skilled professionals and graduates from Bangladesh find corporate jobs in Japan. We will support you with Japanese-style CV writing, interview practice, and matching you with the right employer.",
+                image: "/images/services/InternationalJobServices.jpeg",
               },
             ].map((item, index) => (
               <FadeIn key={item.title} delay={index * 0.07}>
@@ -370,6 +374,68 @@ export default async function VisaServicesPage({
       </section>
 
       <section className="section-padding">
+        <div className="container-main grid items-center gap-10 lg:grid-cols-2">
+          <FadeIn>
+            <div className="order-2 overflow-hidden rounded-3xl shadow-lg lg:order-1">
+              <Image
+                src="/images/services/TechnicalInternTrainingProgram.jpeg"
+                alt="Technical Intern Training Program"
+                width={1200}
+                height={900}
+                className="h-[380px] w-full object-cover"
+                unoptimized
+              />
+            </div>
+          </FadeIn>
+          <div className="order-1 lg:order-2">
+            <FadeIn delay={0.08}>
+              <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">TITP (Technical Intern Training Program)</h2>
+              <p className="mt-4 text-[#0B2D5C]/80">
+                Learn valuable skills while working! Our TITP support helps you join respected Japanese companies as a technical intern. It’s a wonderful opportunity to gain hands-on practical experience, earn money, and learn Japanese work culture directly.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {["Manufacturing", "Construction", "Agriculture", "Food Processing"].map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-[#0B2D5C]/15 bg-white px-3 py-1 text-xs font-semibold text-[#0B2D5C]"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <ul className="mt-6 space-y-3 text-sm text-[#0B2D5C]/85">
+                {[
+                  {
+                    title: "Practical Experience",
+                    desc: "Gain hands-on experience in Japanese companies and learn advanced techniques.",
+                  },
+                  {
+                    title: "Earn While You Learn",
+                    desc: "Receive competitive compensation while participating in the technical intern training.",
+                  },
+                  {
+                    title: "Cultural Exchange",
+                    desc: "Immerse yourself in Japanese work culture, language, and daily life.",
+                  },
+                  {
+                    title: "Future Opportunities",
+                    desc: "Return home with valuable skills or transition to the SSW visa program for a longer stay.",
+                  },
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="mt-0.5 font-bold text-[#C8102E]">→</span>
+                    <span>
+                      <strong className="font-semibold text-[#0B2D5C]">{item.title}:</strong> {item.desc}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
         <div className="container-main">
           <FadeIn>
             <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Your Journey to Japan: Our 6-Step Process</h2>
@@ -396,7 +462,7 @@ export default async function VisaServicesPage({
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding">
         <div className="container-main">
           <FadeIn>
             <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">The Mehul Advantage: Why Choose Us</h2>
@@ -413,7 +479,7 @@ export default async function VisaServicesPage({
               { icon: GraduationCap, title: "Expert Instructors", text: "Learn from experienced professionals dedicated to building your linguistic fluency and career readiness." },
             ].map((item, index) => (
               <FadeIn key={item.title} delay={index * 0.06}>
-                <div className="h-full rounded-2xl border border-[#0B2D5C]/10 bg-[#F5F9FF] p-6 transition hover:-translate-y-1 hover:shadow-md">
+                <div className="h-full rounded-2xl border border-[#0B2D5C]/10 bg-white p-6 transition hover:-translate-y-1 hover:shadow-md">
                   <item.icon className="h-8 w-8 text-[#C8102E]" />
                   <h3 className="mt-4 font-bold text-[#0B2D5C]">{item.title}</h3>
                   <p className="mt-2 text-sm text-[#0B2D5C]/75">{item.text}</p>
@@ -424,26 +490,26 @@ export default async function VisaServicesPage({
         </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding bg-white">
         <div className="container-main">
           <FadeIn>
             <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Trusted Results</h2>
           </FadeIn>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             <FadeIn>
-              <div className="rounded-2xl border border-[#0B2D5C]/10 bg-white p-8 text-center shadow-sm">
+              <div className="rounded-2xl border border-[#0B2D5C]/10 bg-[#F5F9FF] p-8 text-center shadow-sm">
                 <p className="text-4xl font-extrabold text-[#C8102E]">5,000+</p>
                 <p className="mt-2 text-sm font-semibold text-[#0B2D5C]">Students served</p>
               </div>
             </FadeIn>
             <FadeIn delay={0.06}>
-              <div className="rounded-2xl border border-[#0B2D5C]/10 bg-white p-8 text-center shadow-sm">
+              <div className="rounded-2xl border border-[#0B2D5C]/10 bg-[#F5F9FF] p-8 text-center shadow-sm">
                 <p className="text-4xl font-extrabold text-[#0B2D5C]">4</p>
                 <p className="mt-2 text-sm font-semibold text-[#0B2D5C]">Branches across Bangladesh</p>
               </div>
             </FadeIn>
             <FadeIn delay={0.12}>
-              <div className="rounded-2xl border border-[#0B2D5C]/10 bg-white p-8 text-center shadow-sm">
+              <div className="rounded-2xl border border-[#0B2D5C]/10 bg-[#F5F9FF] p-8 text-center shadow-sm">
                 <p className="text-4xl font-extrabold text-[#0B2D5C]">Premium</p>
                 <p className="mt-2 text-sm font-semibold text-[#0B2D5C]">Japan pathway standards</p>
               </div>
@@ -461,7 +527,7 @@ export default async function VisaServicesPage({
               },
             ].map((t, i) => (
               <FadeIn key={t.who} delay={i * 0.08}>
-                <blockquote className="rounded-2xl border border-[#0B2D5C]/10 bg-white p-6 shadow-sm">
+                <blockquote className="rounded-2xl border border-[#0B2D5C]/10 bg-[#F5F9FF] p-6 shadow-sm">
                   <p className="text-sm leading-relaxed text-[#0B2D5C]/85">&ldquo;{t.quote}&rdquo;</p>
                   <p className="mt-3 text-xs font-semibold text-[#C8102E]">{t.who}</p>
                 </blockquote>
@@ -471,14 +537,14 @@ export default async function VisaServicesPage({
         </div>
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding">
         <div className="container-main">
           <FadeIn>
             <h2 className="text-3xl font-bold text-[#0B2D5C] md:text-4xl">Japan in Motion</h2>
           </FadeIn>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              "/images/motion/japan_motion_1.png",
+              "/images/motion/japan_motion_1.jpeg",
               "/images/motion/japan_motion_2.png",
               "/images/motion/japan_motion_3.png",
               "/images/motion/japan_motion_4.png",
