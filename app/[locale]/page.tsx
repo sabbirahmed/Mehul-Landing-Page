@@ -232,7 +232,7 @@ export default async function LocalizedHome({
               </div>
               <div className="absolute -bottom-8 -right-4 z-10 rounded-2xl border border-white/20 bg-[#C8102E]/85 p-4 shadow-xl">
                 <p className="text-sm">Trusted by families</p>
-                <p className="text-2xl font-bold">5,000+</p>
+                <p className="text-2xl font-bold">700+</p>
               </div>
               <div className="relative overflow-hidden rounded-[28px] border border-white/20 shadow-2xl">
                 <HeroImageSlider />

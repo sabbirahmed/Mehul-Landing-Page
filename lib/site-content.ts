@@ -37,12 +37,12 @@ export const labels = {
     finalCtaSub:
       "Build language confidence, secure your pathway, and move forward with trusted experts by your side.",
     footerIntro:
-      "One trusted partner for language, visas, and careers in Japan — structured programs and clear guidance from enrollment to placement.",
+      "One trusted partner for language, visas, and careers in Japan structured programs and clear guidance from enrollment to placement.",
     footerServices: [
       "JLPT N5–N3 & JFT Basic A2 programs",
       "Student, work & SSW visa support",
       "Admission, documentation & interview prep",
-      "4 branches across Bangladesh — visit or call anytime",
+      "4 branches across Bangladesh visit or call anytime",
     ],
   },
   bn: {
@@ -66,12 +66,12 @@ export const labels = {
     finalCtaSub:
       "ভাষায় আত্মবিশ্বাস গড়ুন, আপনার পথ নিরাপদ করুন, এবং বিশ্বস্ত বিশেষজ্ঞদের সঙ্গে এগিয়ে যান।",
     footerIntro:
-      "জাপানে ভাষা, ভিসা ও ক্যারিয়ার — একই নির্ভরযোগ্য সহায়তায় সুশৃঙ্খল কোর্স ও স্বচ্ছ গাইডলাইন।",
+      "জাপানে ভাষা, ভিসা ও ক্যারিয়ার একই নির্ভরযোগ্য সহায়তায় সুশৃঙ্খল কোর্স ও স্বচ্ছ গাইডলাইন।",
     footerServices: [
       "JLPT N5–N3 ও JFT Basic A2 কোর্স",
       "স্টুডেন্ট, জব ও SSW ভিসা সহায়তা",
       "ভর্তি, কাগজপত্র ও ইন্টারভিউ প্রস্তুতি",
-      "বাংলাদেশে ৪টি শাখা — যেকোনো সময় যোগাযোগ",
+      "বাংলাদেশে ৪টি শাখা যেকোনো সময় যোগাযোগ",
     ],
   },
   ja: {
@@ -141,7 +141,7 @@ export const branches: Branch[] = [
       "Ideal for Rajshahi region students",
     ],
     directorQuote:
-      "We bring Dhaka-level premium Japanese education directly to Rajshahi. You don’t need to relocate — your journey to Japan starts right here.",
+      "We bring Dhaka-level premium Japanese education directly to Rajshahi. You don’t need to relocate your journey to Japan starts right here.",
   },
   {
     id: "mymensingh",
@@ -180,7 +180,7 @@ export const branches: Branch[] = [
 ];
 
 export const trustStats = [
-  { label: "Students Served", value: "5,000+" },
+  { label: "Students Served", value: "700+" },
   { label: "Branches", value: "4" },
   { label: "Native Instructor Sessions", value: "Every 3 Months" },
 ];
