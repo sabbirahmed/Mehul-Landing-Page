@@ -41,7 +41,7 @@ export function Navbar({ locale }: { locale: Locale }) {
         </Link>
         <NavbarDesktopNav locale={locale} items={menu} />
         <div className="flex items-center gap-2">
-          <LanguageSwitcher locale={locale} />
+          {/* <LanguageSwitcher locale={locale} /> */}
           <a
             href="https://learn.mehul.com.bd/"
             target="_blank"
