@@ -498,7 +498,7 @@ export default async function VisaServicesPage({
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             <FadeIn>
               <div className="rounded-2xl border border-[#0B2D5C]/10 bg-[#F5F9FF] p-8 text-center shadow-sm">
-                <p className="text-4xl font-extrabold text-[#C8102E]">5,000+</p>
+                <p className="text-4xl font-extrabold text-[#C8102E]">700+</p>
                 <p className="mt-2 text-sm font-semibold text-[#0B2D5C]">Students served</p>
               </div>
             </FadeIn>
